@@ -23,7 +23,7 @@ function Login() {
             const email = values.itEmail;   // The entered value in the login form
             const password = values.itPassword; // The entered value in the login form
             // e.preventDefault();
-            axios.post('http://localhost:8081/login', {email, password})
+            axios.post('https://musecomm-itportal-backend-2.onrender.com/login', {email, password})
             .then((res) => {
                 // const response = res.data;
                 // response.map((item) => {

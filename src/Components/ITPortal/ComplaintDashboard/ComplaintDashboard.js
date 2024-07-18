@@ -9,7 +9,7 @@ function ComplaintDashboard() {
 
     useEffect(() => {
         const name = localStorage.getItem('name');
-        axios.post('http://localhost:8081/complaints', { name })
+        axios.post('https://musecomm-itportal-backend-2.onrender.com/complaints', { name })
         .then(res => {
             setUserComplaints(res.data);
             // console.log(userComplaints);
