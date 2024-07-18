@@ -27,7 +27,7 @@ function ComplaintForm() {
             const complaintVal = values.complaintDescription;
             const name = localStorage.getItem('name');
             const designation = localStorage.getItem('designation');
-            axios.post('https://musecomm-itportal-backend-2.onrender.com/register/complaints', {name, complaintVal})
+            axios.post('http://localhost:8081/register/complaints', {name, complaintVal})
             .then((res) => {
                 // console.log(res);
                 if(res.data === 'Complaint Registered Successfully') {
